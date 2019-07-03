@@ -1,0 +1,37 @@
+{
+  "@context": {
+    "@language": "en",
+    "obo": "http://purl.obolibrary.org/obo/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "DataAcquisition": "obo:OBI_0600013",
+    "identifier": "obo:IAO_0000577",
+    "name": "obo:IAO_0000590",
+    "description": "obo:IAO_0000300",
+    "startDate" : {
+      "@id":"obo:RO_0002537",
+      "@type": "xsd:date"
+    },
+    "endDate" : {
+      "@id":"obo:RO_0002538",
+      "@type": "xsd:date"
+    },
+    "duration" : "obo:PATO_0001309",
+    "location" : "obo:BFO_0000066",
+    "keywords" : "obo:IAO_0000629",
+    "input" : {
+      "@id":"obo:RO_0002233",
+      "@type" : "IAO_0000100"
+    },
+    "output" :  {
+      "@id":"obo:RO_0002234",
+      "@type" : "IAO_0000100"
+    },
+    "uses" : {
+      "@id":"obo:OBI_0000293",
+      "@type" : "obo:OBI_0000968" },
+    "measures" : {
+      "@id" : "obo:IAO:0000221",
+      "@type" : "obo:STATO_23367"
+    }
+  }
+}

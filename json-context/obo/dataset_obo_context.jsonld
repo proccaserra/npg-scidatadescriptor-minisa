@@ -1,0 +1,43 @@
+{
+  "@context": {
+    "obo": "http://purl.obolibrary.org/obo/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "swo": "http://www.ebi.ac.uk/swo/",
+    "Dataset": "obo:IAO_0000100",
+    "identifier": "obo:IAO_0000577",
+    "name": {
+      "@id": "obo:IAO_0000590"
+    },
+    "description": {
+      "@id": "obo:IAO_0000300"
+    },
+    "title": {
+      "@id": "obo:OBI_0001622",
+      "@type": "obo:IAO_0000300"
+    },
+    "primaryPublications": "obo:IAO_0000301",
+    "citations": "obo:IAO_0000301",
+    "producedBy": "obo:RO_0003001",
+    "isAbout": "obo:IAO_0000136",
+    "hasPart": {
+      "@id": "obo:BFO_0000051",
+      "@type": "obo:IAO_0000100"
+    },
+    "keywords": "obo:IAO_0000629",
+    "spatialCoverage": {
+      "@id": "obo:BFO_0000066",
+      "@type": "obo:BFO_0000029"
+    },
+    "types": "NCIT_C42645",
+    "dimensions": {
+      "@id": "obo:BFO_0000051",
+      "@type": "obo:STATO_0000258"
+    },
+    "acknowledges": "obo:IAO:0000324",
+    "version": "obo:IAO_0000129",
+    "dates": {
+      "@id": "obo:RO_0002537",
+      "@type": "xsd:date"
+    }
+  }
+}

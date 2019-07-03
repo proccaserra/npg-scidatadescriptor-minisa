@@ -1,0 +1,43 @@
+{
+  "id": "https://w3id.org/sdminisa/schema/sd_minisa_license_schema.json",
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "title": "Scientific Data minISA license schema: Licesne",
+  "description": "A legal document giving official permission to do something with a Resource. It is assumed that an external vocabulary will describe with sufficient granularity the permission for redistribution, modification, derivation, reuse, etc. and conditions for citation/acknowledgment.",
+  "type": "object",
+  "properties": {
+    "@context": {
+      "description": "The JSON-LD context",
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "object"
+        },
+        {
+          "type": "array"
+        }
+      ]
+    },
+    "@id": {
+      "description": "The JSON-LD identifier",
+      "type": "string", "format": "uri"
+    },
+    "@type": {
+      "description": "The JSON-LD type",
+      "type": "string", "enum": [ "License" ]},
+    "identifier": {
+      "description": "The identifier of the license.",
+      "$ref": "sd_minisa_identifier_info_schema.json#"
+    },
+    "name": {
+      "description": "The name of the license.",
+      "type" :  "string"
+    },
+    "version": {
+      "description": "The version of the license.",
+      "type" :  "string"
+    },
+  "additionalProperties": false,
+  "required": [ "name"]
+}

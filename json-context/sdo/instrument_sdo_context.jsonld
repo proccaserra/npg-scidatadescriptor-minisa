@@ -1,0 +1,18 @@
+{
+  "@context": {
+    "sdo": "https://schema.org/",
+    "BiologicalEntity": "sdo:Thing",
+     "identifier": {
+      "@id": "sdo:identifier",
+      "@type": "sdo:Text"
+    },
+    "name": {
+      "@id": "sdo:name",
+      "@type": "sdo:Text"
+    },
+    "description":{
+        "@id": "sdo:description",
+        "@type": "sdo:Text"
+    }
+  }
+}

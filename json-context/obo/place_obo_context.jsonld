@@ -1,0 +1,18 @@
+{
+  "@context": {
+    "@language": "en",
+    "obo": "http://purl.obolibrary.org/obo/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "geojson" : "https://purl.org/geojson/vocab#",
+    "Place": "obo:BFO_0000029",
+    "identifier": "obo:IAO_0000577",
+    "name": "obo:IAO_0000590",
+    "description": "obo:IAO_0000300",
+    "geometry": "geojson:geometry",
+    "coordinates": {
+      "@container": "@list",
+      "@id": "geojson:coordinates"
+    },
+    "postalAddress": "obo:IAO_0000422"
+  }
+}

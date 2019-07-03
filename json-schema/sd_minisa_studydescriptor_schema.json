@@ -1,0 +1,113 @@
+{
+  "id": "https://w3id.org/sdminisa/schema/sd_minisa_studydescriptor_schema.json",
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "title": "NGP-Scientific-DataDescriptor-minISA-schema: StudyDescriptor",
+  "description": "An entity that helps an agent perform an activity.",
+  "type": "object",
+  "properties": {
+    "@context": {
+      "description": "The JSON-LD context",
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "object"
+        },
+        {
+          "type": "array"
+        }
+      ]
+    },
+    "@id": {
+      "description": "The JSON-LD identifier",
+      "type": "string", "format": "uri"
+    },
+    "@type": {
+      "description": "The JSON-LD type",
+      "type": "string", "enum": [ "StudyDescriptor" ]},
+    "identifier": {
+      "description": "The identifier of the StudyDescriptor.",
+      "$ref": "sd_minISA_identifier_info_schema.json#"
+    },
+    "title": {
+      "description": "The title of the StudyDescriptor.",
+      "type" :  "string"
+    },
+    "type": {
+      "description": "The type of the StudyDescriptor.",
+      "$ref" : "sd_minISA_annotation_schema.json#"
+    },
+     "repositories" : {
+      "description" : "The primary publication(s) associated with the Scientific Data Descriptor, usually describing how the dataset was produced",
+      "type" : "array",
+            "items" : {
+                "$ref" : "sd_minisa_repository_schema.json#"
+            }
+    },
+    "ontologySourceReferences" : {
+      "description" : "The primary publication(s) associated with the Scientific Data Descriptor, usually describing how the dataset was produced",
+      "type" : "array",
+            "items" : {
+                "$ref" : "sd_minisa_ontoresource_schema.json#"
+            }
+    }, 
+    "relatedPublications" : {
+      "description" : "The primary publication(s) associated with the Scientific Data Descriptor, usually describing how the dataset was produced",
+      "type" : "array",
+            "items" : {
+                "$ref" : "sd_minisa_publication_schema.json#"
+            }
+    },
+    "stuydCharacteristics": {
+       "description" : "elements to describe the properties of the study participants or subjects",
+       "type" : "array",
+            "items" : {
+                "$ref" : "sd_minisa_category_values_pair_schema.json#"
+            },
+       "organism": {
+        "description" : "an element to describe the taxonomic information of the study participants or subjects",
+        "type" :"array",
+          "items": {
+            "$ref": "sd_minisa_annotation_schema"
+          }
+       },
+       "environmentType": {
+        "description" : "an element to describe the envorinmental properties, information of the study participants or subjects or specimens",
+        "type" :"array",
+          "items": {
+            "$ref": "sd_minisa_annotation_schema"
+          }
+       },
+       "geographicalLocation": {
+        "description" : "an element to describe the geographical origin, information of the study participants or subjects or specimens",
+        "type" : "array",
+        "items" : {
+          "$ref" : "sd_minisa_place_schema"
+        }      
+       }          
+    },
+     "factors" : {
+      "description" : "The list of study's independent variables, aka predictor variables if applicable",
+      "type" : "array",
+            "items" : {
+                "$ref" : "sd_minisa_factor_schema.json#"
+            }
+    },
+    "assays" : {
+      "description" : "The list of study's dependent variables, aka response variables if applicable",
+      "type" : "array",
+            "items" : {
+                "$ref" : "sd_minisa_assay_schema.json#"
+            }
+    },       
+    "commments" : {
+      "description" : "A list of key value pairs to provide any further annotation",
+      "type" : "array",
+            "items" : {
+                "$ref" : "sd_minisa_category_values_pair_schema.json#"
+            }
+    },
+  "additionalProperties": false,
+  "required":[ "name" ]
+}

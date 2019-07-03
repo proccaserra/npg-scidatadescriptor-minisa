@@ -1,0 +1,14 @@
+{
+  "@context": {
+    "sdo": "https://schema.org/",
+    "Annotation": "sdo:Thing",
+    "value": {
+      "@id": "sdo:value",
+      "@type": "sdo:DataType"
+    },
+    "valueIRI": {
+      "@id": "sdo:url",
+      "@type": "sdo:URL"
+    }
+  }
+}

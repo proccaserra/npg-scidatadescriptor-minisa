@@ -1,0 +1,59 @@
+{
+  "id": "https://w3id.org/sdminisa/schema/sd_minisa_ontoresource_schema.json",
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "title": "NGP-Scientific-DataDescriptor-MinISA-schema: OntologyResource",
+  "description": "A terminology, controlled vocabulary or ontology resource.",
+  "type": "object",
+  "properties": {
+    "@context": {
+      "description": "The JSON-LD context",
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "object"
+        },
+        {
+          "type": "array"
+        }
+      ]
+    },
+    "@id": {
+      "description": "The JSON-LD identifier",
+      "type": "string", "format": "uri"
+    },
+    "@type": {
+      "description": "The JSON-LD type",
+      "type": "string", "enum": [ "OntologyResource" ]},
+    "identifier": {
+      "description": "The identifier of the ontology resource.",
+      "$ref": "sd_minisa_identifier_info_schema.json#"
+    },
+    "name": {
+      "description": "The full name of the resource.",
+      "type" :  "string"
+    },
+    "description": {
+      "description" : "a textual description of the resource",
+      "type" : "string"
+    },
+     "file": {
+      "description":"the address to the resource, a path to a local directory or a full resolvable uri",
+      "type":"uri"
+    },
+    "version" : {
+      "description" : "the version number or release identifier for the resource",
+      "type" : "string"
+    },       
+    "extraProperties": {
+      "description": "Extra properties that do not fit in the previous specified attributes. ",
+      "type": "array",
+      "items": {
+        "$ref" : "sd_minisa_category_values_pair_schema.json#"
+      }
+    }
+  },
+  "additionalProperties": false,
+  "required" : ["name"]
+}

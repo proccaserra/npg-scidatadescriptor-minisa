@@ -1,0 +1,49 @@
+{
+  "identifier": "Blank fields test",
+  "title": "SDATA-123456",
+  "relatedPublications": [],
+  "repositories": [
+    {
+      "name": "4TU.Centre for Research Data",
+      "value": "https://doi.org/10.26188/5c2c5d0ed52d7"
+    }
+  ],
+  "assays": [
+    {
+      "measurementType": {
+        "annotationValue": "protein expression profiling",
+        "termAccession": "http://purl.obolibrary.org/obo/OBI_0000615",
+        "termSource": "ERO"
+      },
+      "technologyType": {
+        "annotationValue": "mass spectrometry assay",
+        "termAccession": "http://purl.obolibrary.org/obo/OBI_0000470",
+        "termSource": "ERO"
+      }
+    }
+  ],
+  "factors": [],
+  "studyCharacteristics": {
+    "organism": [],
+    "environmentType": [],
+    "geographicalLocation": []
+  },
+  "ontologySourceReferences": {
+    "ERO": {
+      "name": "ERO",
+      "description": "Eagle-I Research Resource Ontology",
+      "file": "http://data.bioontology.org/ontologies/ERO",
+      "version": "2013-08-02"
+    }
+  },
+  "comments": [
+    {
+      "name": "Created With Configuration",
+      "value": "1.0"
+    },
+    {
+      "name": "Data Descriptor License",
+      "value": "CC-BY-4.0"
+    }
+  ]
+}

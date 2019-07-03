@@ -1,0 +1,11 @@
+{
+  "@context": {
+    "sdo": "https://schema.org/",
+    "Identifier": "sdo:Thing",
+    "identifier": "sdo:identifier",
+    "identifierSource": {
+       "@id": "sdo:Property",
+       "@type": "sdo:Text"
+    }
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "id": "https://w3id.org/sdminisa/schema/sd_minisa_instrument_schema.json",
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "title": "Sci instrument schema",
+  "description": "An entity that helps an agent perform an activity.",
+  "type": "object",
+  "properties": {
+    "@context": {
+      "description": "The JSON-LD context",
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "object"
+        },
+        {
+          "type": "array"
+        }
+      ]
+    },
+    "@id": {
+      "description": "The JSON-LD identifier",
+      "type": "string", "format": "uri"
+    },
+    "@type": {
+      "description": "The JSON-LD type",
+      "type": "string", "enum": [ "Instrument" ]},
+    "identifier": {
+      "description": "The identifier of the instrument.",
+      "$ref": "sd_minisa_identifier_info_schema.json#"
+    },
+    "name": {
+      "description": "The name of the instrument.",
+      "type" :  "string"
+    },
+    "type": {
+      "description": "The type of the instrument/technology.",
+      "$ref" : "sd_minisa_annotation_schema.json#"
+    },
+    "isUsedBy" : {
+      "description": "The data acquisition activity that makes use of this instrument.",
+      "type" : "array",
+      "items" : {
+        "$ref": "sd_minisa_assay_schema.json#"
+      }
+    }
+  },
+  "additionalProperties": false,
+  "required":[ "name" ]
+}

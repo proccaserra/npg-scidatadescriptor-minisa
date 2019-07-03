@@ -1,0 +1,30 @@
+{
+  "@context": {
+    "sdo": "https://schema.org/",
+    "Place": "sdo:Place",
+    "identifier": {
+      "@id": "sdo:identifier",
+      "@type": "sdo:Text"
+    },
+    "name": {
+      "@id": "sdo:name",
+      "@type": "sdo:Text"
+    },
+    "description": {
+      "@id": "sdo:description",
+      "@type": "sdo:Text"
+    },
+    "postalAddress": {
+        "@id": "sdo:address",
+        "@type": "sdo:PostalAddress"
+    },
+    "geometry": {
+        "@id": "sdo:geospatiallyContains",
+        "@type": "sdo:GeospatialGeometry"
+    },
+    "coordinates": {
+         "@id": "sdo:geo",
+         "@type": "sdo:GeoCoordinates"
+    }
+  }
+}

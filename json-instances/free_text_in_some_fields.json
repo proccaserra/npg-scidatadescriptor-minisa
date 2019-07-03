@@ -1,0 +1,129 @@
+{
+  "identifier": "SDATA-666",
+  "title": "free text in some fields",
+  "relatedPublications": [
+    "https://doi.org/10.1038/s41597-019-0059-9"
+  ],
+  "repositories": [
+    {
+      "name": "4TU.Centre for Research Data",
+      "value": "https://doi.org/10.26188/5c2c5d0ed52d7"
+    },
+    {
+      "name": "DataCite DOI",
+      "value": "SRP123456"
+    }
+  ],
+  "assays": [
+    {
+      "measurementType": {
+        "annotationValue": "(+)-Atherospermoline",
+        "termAccession": "http://purl.obolibrary.org/obo/CHEBI_10",
+        "termSource": "CHEBI"
+      },
+      "technologyType": {
+        "annotationValue": "(+)-Atherospermoline",
+        "termAccession": "http://purl.obolibrary.org/obo/CHEBI_10",
+        "termSource": "CHEBI"
+      }
+    },
+    {
+      "measurementType": {
+        "annotationValue": "length of my fingernails"
+      },
+      "technologyType": {
+        "annotationValue": "looked at them"
+      }
+    }
+  ],
+  "factors": [
+    {
+      "name": "age",
+      "type": {
+        "annotationValue": "age",
+        "termAccession": "http://purl.obolibrary.org/obo/PATO_0000011",
+        "termSource": "PATO"
+      }
+    },
+    {
+      "name": "people",
+      "type": {
+        "annotationValue": "number of people who believe it"
+      }
+    }
+  ],
+  "studyCharacteristics": {
+    "organism": [
+      {
+        "annotationValue": "Homo sapiens",
+        "termAccession": "http://purl.bioontology.org/ontology/NCBITAXON/9606",
+        "termSource": "NCBITAXON"
+      },
+      {
+        "annotationValue": "Homer simpsons"
+      }
+    ],
+    "environmentType": [
+      {
+        "annotationValue": "entity",
+        "termAccession": "http://purl.obolibrary.org/obo/BFO_0000001",
+        "termSource": "ENVO"
+      },
+      {
+        "annotationValue": "the universe"
+      }
+    ],
+    "geographicalLocation": [
+      {
+        "annotationValue": "Whirligig Geyser",
+        "termAccession": "http://purl.obolibrary.org/obo/GAZ_00000059",
+        "termSource": "GAZ"
+      },
+      {
+        "annotationValue": "the multiverse"
+      }
+    ]
+  },
+  "ontologySourceReferences": {
+    "PATO": {
+      "name": "PATO",
+      "description": "Phenotypic Quality Ontology",
+      "file": "http://data.bioontology.org/ontologies/PATO",
+      "version": "unknown"
+    },
+    "CHEBI": {
+      "name": "CHEBI",
+      "description": "Chemical Entities of Biological Interest Ontology",
+      "file": "http://data.bioontology.org/ontologies/CHEBI",
+      "version": "172"
+    },
+    "NCBITAXON": {
+      "name": "NCBITAXON",
+      "description": "National Center for Biotechnology Information (NCBI) Organismal Classification",
+      "file": "http://data.bioontology.org/ontologies/NCBITAXON",
+      "version": "2018AA"
+    },
+    "ENVO": {
+      "name": "ENVO",
+      "description": "Environment Ontology",
+      "file": "http://data.bioontology.org/ontologies/ENVO",
+      "version": "unknown"
+    },
+    "GAZ": {
+      "name": "GAZ",
+      "description": "Gazetteer",
+      "file": "http://data.bioontology.org/ontologies/GAZ",
+      "version": "$Revision: 1.512 $"
+    }
+  },
+  "comments": [
+    {
+      "name": "Created With Configuration",
+      "value": "1.0"
+    },
+    {
+      "name": "Data Descriptor License",
+      "value": "CC-BY-4.0"
+    }
+  ]
+}

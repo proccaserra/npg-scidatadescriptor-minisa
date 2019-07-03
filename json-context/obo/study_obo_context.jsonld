@@ -1,0 +1,41 @@
+{
+  "@context": {
+    "@language": "en",
+    "obo": "http://purl.obolibrary.org/obo/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "Study": "obo:OBI_0000066",
+    "identifier": {
+      "@id": "obo:IAO_0000577",
+      "@type": "@id"
+    },
+    "name": {
+      "@id": "obo:IAO_0000590"
+    },
+    "description": {
+      "@id": "obo:IAO_0000300"
+    },
+    "startDate" : {"@id":"obo:RO_0002537",
+      "@type": "xsd:date"
+    },
+    "endDate" : { "@id":"obo:RO_0002538",
+      "@type": "xsd:date"
+    },
+    "duration" : "obo:PATO_0001309",
+    "location" : "obo:BFO_0000066",
+    "keywords" : "obo:IAO_0000629",
+    "input":"obo:RO_0002233",
+    "output" : "obo:RO_0002234",
+    "schedulesActivity": "obo:BFO_0000067",
+    "schedulesDataAcquisition": "obo:BFO_0000067",
+    "selectionCriteria" : "obo:IAO_0000055",
+    "studyGroups" : {
+      "@id":"obo:BFO_0000051",
+      "@type" : "obo:STATO_0000193"
+    },
+    "usesReagent" : {
+      "@id":"obo:RO_0000057",
+      "@type" : "obo:OBI_0001879"
+    },
+    "isAboutBiologicalEntity": "obo:IAO_0000136"
+  }
+}

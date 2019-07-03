@@ -1,0 +1,83 @@
+{
+  "id": "https://w3id.org/sdminisa/schema/sd_minisa_publication_schema.json",
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "title" : "NGP-Scientific-DataDescriptor-MinISA-schema: Publication",
+  "description" : "A (digital) document made available by a publisher.",
+  "type" : "object",
+  "properties" : {
+    "@context": {
+      "description": "The JSON-LD context",
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "object"
+        },
+        {
+          "type": "array"
+        }
+      ]
+    },
+    "@id": {
+      "description": "The JSON-LD identifier",
+      "type": "string", "format": "uri"
+    },
+    "@type":  {
+      "description": "The JSON-LD type",
+      "type": "string", "enum": [ "Publication" ]},
+    "identifier": {
+      "description": "The identifier of the publication.",
+      "$ref": "sd_minisa_identifier_info_schema.json#"
+    },
+    "title": {
+      "description": "The name of the publication, usually one sentece or short description of the publication.",
+      "type" :  "string"
+    },
+    "type" : {
+      "description": "Publication type, ideally delegated to an external vocabulary/resource.",
+      "$ref" : "sd_minisa_annotation_schema.json#"
+    },
+    "publicationVenue": {
+      "description": "The name of the publication venue where the document is published if applicable.",
+      "type": "string"
+    },
+    "dates" : {
+      "description": "Relevant dates, the date of the publication must be provided.",
+      "type" : "array",
+      "items": {
+        "$ref" : "sd_minisa_date_info_schema.json#"
+      }
+    },
+    "authors" : {
+      "description": "The person(s) and/or organisation(s) responsible for the publication.",
+      "type" : "array",
+      "items" : {
+        "oneOf": [
+          {"$ref" : "sd_minisa_person_schema.json#"},
+          {"$ref" : "sd_minisa_organization_schema.json#"}
+        ]
+      },
+      "minItems" : 1
+    },
+    "authorsList": {
+      "description": "The list of authors made available as a string (does not allow disambiguation).",
+      "type": "string"
+    },
+    "licenses" : {
+      "description": "The terms of use of the publication.",
+      "type" : "array",
+      "items" : {
+        "$ref" : "sd_minisa_license_schema.json#"
+      }
+    },
+    "extraProperties": {
+      "description": "Extra properties that do not fit in the previous specified attributes. ",
+      "type": "array",
+      "items": {
+        "$ref" : "sd_minisa_category_values_pair_schema.json#"
+      }
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,21 @@
+{
+  "@context": {
+    "@language": "en",
+    "obo": "http://purl.obolibrary.org/obo/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "swo" : "http://www.ebi.ac.uk/swo/",
+    "DataRepository": "obo:IAO_0000579",
+    "identifier": {
+      "@id": "obo:IAO_0000577",
+      "@type": "@id"
+    },
+    "name": {
+      "@id": "obo:IAO_0000590"
+    },
+    "description": {
+      "@id": "obo:IAO_0000300"
+    },
+    "licenses": "swo:SWO_0000002",
+    "version": "obo:IAO_0000129"
+  }
+}

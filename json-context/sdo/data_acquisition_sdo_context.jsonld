@@ -1,0 +1,28 @@
+{
+  "@context": {
+    "sdo": "https://schema.org/",
+    "DataAcquisition": "sdo:Action",
+    "identifier": {
+      "@id": "sdo:identifier",
+      "@type": "sdo:Text"
+    },
+    "name": {
+      "@id": "sdo:name",
+      "@type": "sdo:Text"
+    },
+    "description": {
+      "@id": "sdo:description",
+      "@type": "sdo:Text"
+    },
+    "licenses": "sdo:license",
+    "version": "sdo:version"
+  },
+  "startDate": {
+    "@id": "sdo:startTime",
+    "@type": "sdo:DateTime"
+  },
+  "endDate": {
+    "@id": "sdo:endTime",
+    "@type": "sdo:DateTime"
+  }
+}

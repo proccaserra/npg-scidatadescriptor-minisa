@@ -1,0 +1,18 @@
+{
+  "@context": {
+    "sdo": "https://schema.org/",
+    "License": "sdo:CreativeWork",
+    "identifier": {
+      "@id": "sdo:identifier",
+      "@type": "sdo:Text"
+    },
+    "name": {
+      "@id": "sdo:name",
+      "@type": "sdo:Text"
+    },
+    "version": {
+        "@id": "sdo:version",
+        "@type": "sdo:Text"
+    }
+  }
+}

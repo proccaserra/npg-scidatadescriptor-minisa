@@ -1,0 +1,14 @@
+{
+  "@context": {
+    "sdo": "https://schema.org/",
+    "CategoryValuesPair": "sdo:PropertyValue",
+    "category": {
+      "@id": "sdo:value",
+      "@type": "sdo:Text"
+    },
+    "categoryIRI": {
+      "@id": "sdo:url",
+      "@type": "sdo:URL"
+    }
+  }
+}

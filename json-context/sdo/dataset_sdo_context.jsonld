@@ -1,0 +1,45 @@
+{
+  "@context": {
+    "sdo": "https://schema.org/",
+    "Dataset": "sdo:Dataset",
+    "identifier": {
+      "@id": "sdo:identifier",
+      "@type": "sdo:Text"
+    },
+    "alternateIdentifier": "sdo:alternateName",
+    "relatedIdentifier": "sdo:mentions",
+    "title": {
+      "@id": "sdo:name",
+      "@type": "sdo:Text"
+    },
+    "description": {
+      "@id": "sdo:description",
+      "@type": "sdo:Text"
+    },
+    "dates": "sdo:temporalCoverage",
+    "spatialCoverage": "sdo:spatialCoverage",
+    "storedIn": {
+        "@id": "sdo:includedInDataCatalog",
+        "@type": "DataRepository"
+    },
+    "distributions": {
+      "@id": "sdo:distribution",
+      "@type": "DatasetDistribution"
+    },
+    "primaryPublications": "sdo:citation",
+    "citations": "sdo:citation",
+    "producedBy": "sdo:producer",
+    "creators": {
+        "@id": "sdo:creator",
+        "@type": "sdo:Thing"
+    },
+    "licenses": "sdo:license",
+    "isAbout": "sdo:about",
+    "hasPart": {
+        "@id": "sdo:hasPart",
+        "@type": "Dataset"
+    },
+    "acknowledges": "sdo:funder",
+    "dimensions": "sdo:variableMeasured"
+  }
+}

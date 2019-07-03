@@ -1,0 +1,7 @@
+{
+  "@context": {
+    "obo": "http://purl.obolibrary.org/obo/",
+    "CategoryValuesPair": "sdo:PropertyValue",
+    "category": "obo:OBI_0000963"
+  }
+}
