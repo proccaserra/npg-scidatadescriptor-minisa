@@ -111,3 +111,4 @@
   "additionalProperties": false,
   "required":[ "name" ]
 }
+}

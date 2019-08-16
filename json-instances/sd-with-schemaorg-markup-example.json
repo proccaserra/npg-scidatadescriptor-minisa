@@ -1,0 +1,229 @@
+{ "@context":{
+    "@base": "http://schema.org",
+    "Dataset": "http://schema.org/Dataset",
+    "repositories": "http://schema.org/includedinDatacatalog",
+    "assays":"https://schema.org/recordedAt",
+    "factors":"http://schema.org/Property",
+    "studyCharacteristics":"http://schema.org/about",
+    "organism":"https://schema.org/AnatomicalSystem",
+    "name": "https//schema.org/name",
+    "value": "http://schema.org/value",
+    "annotationValue":"",
+    "termAccession": "https://schema.org/termCode",
+    "termSource": "https://schema.org/inDefinedTermSet",
+    "ontologySourceReferences":"http://schema.org/CategoryCodeSet",
+    "relatedPublications":"https://schema.org/citation",
+   "environmentType":"",
+   "geographicalLocation":"https://schema.org/spatialCoverage",
+   
+   "measurementType":"https://schema.org/variableMeasured",
+   "technologyType":"https://schema.org/measurementTechnique",
+   "file":"http://schema.org/uri",
+   "version" :"https://schema.org/codingSystem",
+   "description":"http://schema.org/description",
+   "title":"http://schema.org/headline",
+   "identifier": "http://schema.org/identifier",
+   "accession" : "http://schema.org/identifier",
+    "comments":"http://schema.org/Comment"
+},
+  "@type": "Dataset",
+  "identifier": "SDATA-123456",
+  "title": "multiple options",
+  "relatedPublications": [
+    "https://doi.org/10.1038/s41597-019-0059-9",
+    "https://doi.org/10.1038/nature17632",
+    "https://doi.org/10.1038/d41586-019-01986-x"
+  ],
+  "repositories": [
+    {
+      "name": "4TU.Centre for Research Data",
+      "accession": "https://doi.org/10.26188/5c2c5d0ed52d7"
+    },
+    {
+      "name": "AEKOS - TERN Ecoinformatics",
+      "accession": "SRP123456"
+    },
+    {
+      "name": "figshare",
+      "accession": "10.6084/m9.figshare.7770035.v1"
+    }
+  ],
+  "assays": [
+    { 
+      "measurementType": {
+        "annotationValue": "protein expression profiling",
+        "termAccession": "http://purl.obolibrary.org/obo/OBI_0000615",
+        "termSource": "ERO"
+      },
+      "technologyType": {
+        "annotationValue": "mass spectrometry assay",
+        "termAccession": "http://purl.obolibrary.org/obo/OBI_0000470",
+        "termSource": "ERO"
+      }
+    },
+    {
+      "measurementType": {
+        "annotationValue": "road",
+        "termAccession": "http://purl.obolibrary.org/obo/ENVO_00000064",
+        "termSource": "ENVO"
+      },
+      "technologyType": {
+        "annotationValue": "Finger Stick",
+        "termAccession": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C85551",
+        "termSource": "NCIT"
+      }
+    },
+    {
+      "measurementType": {
+        "annotationValue": "alcoholic psychosis",
+        "termAccession": "http://purl.obolibrary.org/obo/DOID_252",
+        "termSource": "CLO"
+      },
+      "technologyType": {
+        "annotationValue": "Beer",
+        "termAccession": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C66824",
+        "termSource": "NCIT"
+      }
+    }
+  ],
+  "factors": [
+    {
+      "name": "age",
+      "type": {
+        "annotationValue": "age",
+        "termAccession": "http://purl.obolibrary.org/obo/PATO_0000011",
+        "termSource": "PATO"
+      }
+    },
+    {
+      "name": "sex",
+      "type": {
+        "annotationValue": "sex",
+        "termAccession": "http://purl.obolibrary.org/obo/PATO_0000047",
+        "termSource": "CLO"
+      }
+    },
+    {
+      "name": "variety",
+      "type": {
+        "annotationValue": "Variety",
+        "termAccession": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C62709",
+        "termSource": "NCIT"
+      }
+    }
+  ],
+  "studyCharacteristics": {
+    "organism": [
+      {
+        "annotationValue": "Homo sapiens/Rattus norvegicus xenograft",
+        "termAccession": "http://purl.bioontology.org/ontology/NCBITAXON/1573476",
+        "termSource": "NCBITAXON"
+      },
+      {
+        "annotationValue": "Homo sapiens",
+        "termAccession": "http://purl.bioontology.org/ontology/NCBITAXON/9606",
+        "termSource": "NCBITAXON"
+      },
+      {
+        "annotationValue": "Rattus norvegicus",
+        "termAccession": "http://purl.bioontology.org/ontology/NCBITAXON/10116",
+        "termSource": "NCBITAXON"
+      }
+    ],
+    "environmentType": [
+      { 
+        "annotationValue": "entity",
+        "termAccession": "http://purl.obolibrary.org/obo/BFO_0000001",
+        "termSource": "ENVO"
+      },
+      {
+        "annotationValue": "continuant",
+        "termAccession": "http://purl.obolibrary.org/obo/BFO_0000002",
+        "termSource": "ENVO"
+      },
+      {
+        "annotationValue": "process",
+        "termAccession": "http://purl.obolibrary.org/obo/BFO_0000015",
+        "termSource": "ENVO"
+      }
+    ],
+    "geographicalLocation": [
+      {
+        "annotationValue": "Whirligig Geyser",
+        "termAccession": "http://purl.obolibrary.org/obo/GAZ_00000059",
+        "termSource": "GAZ"
+      },
+      {
+        "annotationValue": "Margaret Bay",
+        "termAccession": "http://purl.obolibrary.org/obo/GAZ_00000076",
+        "termSource": "GAZ"
+      },
+      {
+        "annotationValue": "Indian Ocean current",
+        "termAccession": "http://purl.obolibrary.org/obo/GAZ_00000361",
+        "termSource": "GAZ"
+      }
+    ]
+  },
+  "ontologySourceReferences": {
+    "PATO": {
+      "@type":"MedicalCode",
+      "name": "PATO",
+      "description": "Phenotypic Quality Ontology",
+      "file": "http://data.bioontology.org/ontologies/PATO",
+      "version": "unknown"
+    },
+    "CLO": {
+      "@type":"MedicalCode",
+      "name": "CLO",
+      "description": "Cell Line Ontology",
+      "file": "http://data.bioontology.org/ontologies/CLO",
+      "version": "2.1.162"
+    },
+    "NCIT": {
+      "@type":"MedicalCode",
+      "name": "NCIT",
+      "description": "National Cancer Institute Thesaurus",
+      "file": "http://data.bioontology.org/ontologies/NCIT",
+      "version": "19.02d"
+    },
+    "ERO": {
+      "@type":"MedicalCode",
+      "name": "ERO",
+      "description": "Eagle-I Research Resource Ontology",
+      "file": "http://data.bioontology.org/ontologies/ERO",
+      "version": "2013-08-02"
+    },
+    "ENVO": {
+      "@type":"MedicalCode",
+      "name": "ENVO",
+      "description": "Environment Ontology",
+      "file": "http://data.bioontology.org/ontologies/ENVO",
+      "version": "unknown"
+    },
+    "NCBITAXON": {
+      "@type":"MedicalCode",
+      "name": "NCBITAXON",
+      "description": "National Center for Biotechnology Information (NCBI) Organismal Classification",
+      "file": "http://data.bioontology.org/ontologies/NCBITAXON",
+      "version": "2018AA"
+    },
+    "GAZ": {
+      "@type":"MedicalCode",
+      "name": "GAZ",
+      "description": "Gazetteer",
+      "file": "http://data.bioontology.org/ontologies/GAZ",
+      "version": "$Revision: 1.512 $"
+    }
+  },
+  "comments": [
+    {
+      "name": "Created With Configuration",
+      "value": "1.0"
+    },
+    {
+      "name": "Data Descriptor License",
+      "value": "CC-BY-4.0"
+    }
+  ]
+}

@@ -67,7 +67,7 @@
       "items" : {
         "$ref" : "sd_minisa_date_info_schema.json#"
       }
-    },
+    }
   },
   "additionalProperties": false,
   "required" : [ "measurementType", "technologyType" ]

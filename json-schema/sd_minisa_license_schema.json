@@ -41,3 +41,4 @@
   "additionalProperties": false,
   "required": [ "name"]
 }
+}

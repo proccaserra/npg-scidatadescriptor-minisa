@@ -1,0 +1,160 @@
+{
+"@type":"Dataset",
+  "identifier": "SDATA-666",
+  "title": "free text in some fields",
+  "relatedPublications": [
+  {
+    "@type":"CreativeWork",
+    "doi":"https://doi.org/10.1038/s41597-019-0059-9"}
+  ],
+  "repositories": [
+    {
+      "@type":"DataCatalog",
+      "name": "4TU.Centre for Research Data",
+      "value": "https://doi.org/10.26188/5c2c5d0ed52d7"
+    },
+    {
+      "@type":"DataCatalog",
+      "name": "DataCite DOI",
+      "value": "SRP123456"
+    }
+  ],
+  "assays": [
+    
+    {
+    "@type":"variableMeasured",
+      "measurementType": {
+      "@type":"PropertyValue",
+        "annotationValue": "(+)-Atherospermoline",
+        "termAccession": "http://purl.obolibrary.org/obo/CHEBI_10",
+        "termSource": "CHEBI"
+      },
+      "technologyType": {
+      "@type":"PropertyValue",
+        "annotationValue": "(+)-Atherospermoline",
+        "termAccession": "http://purl.obolibrary.org/obo/CHEBI_10",
+        "termSource": "CHEBI"
+      }
+    },
+    {
+    "@type":"variableMeasured",
+      "measurementType": {
+      "@type":"PropertyValue",
+        "annotationValue": "length of my fingernails"
+      },
+      "technologyType": {
+      "@type":"PropertyValue",
+        "annotationValue": "looked at them"
+      }
+    }
+  ],
+  "factors": [
+    {
+      "@type":"variableMeasured",
+      "name": "age",
+      "type": {
+        "@type":"PropertyValue",
+        "annotationValue": "age",
+        "termAccession": "http://purl.obolibrary.org/obo/PATO_0000011",
+        "termSource": "PATO"
+      }
+    },
+    {
+     "@type":"variableMeasured",
+      "name": "people",
+      "type": {
+       "@type":"PropertyValue",
+        "annotationValue": "number of people who believe it"
+      }
+    }
+  ],
+  "studyCharacteristics": {
+        "@type":"variableMeasured",
+    "organism": [
+      {
+        "@type":"PropertyValue",
+        "annotationValue": "Homo sapiens",
+        "termAccession": "http://purl.bioontology.org/ontology/NCBITAXON/9606",
+        "termSource": "NCBITAXON"
+      },
+      {
+       "@type":"PropertyValue",
+        "annotationValue": "Homer simpsons"
+      }
+    ],
+    "environmentType": [
+      {
+      "@type":"PropertyValue",
+        "annotationValue": "entity",
+        "termAccession": "http://purl.obolibrary.org/obo/BFO_0000001",
+        "termSource": "ENVO"
+      },
+      {
+      "@type":"PropertyValue",
+        "annotationValue": "the universe"
+      }
+    ],
+    "geographicalLocation": [
+      {
+      "@type":"Place",
+        "annotationValue": "Whirligig Geyser",
+        "termAccession": "http://purl.obolibrary.org/obo/GAZ_00000059",
+        "termSource": "GAZ"
+      },
+      {
+       "@type":"Place",
+        "annotationValue": "the multiverse"
+      }
+    ]
+  },
+  "ontologySourceReferences": {
+    "@type":"CategoryCodeSet",
+    "PATO": {
+    "@type":"CategoryCodeSet",
+      "name": "PATO",
+      "description": "Phenotypic Quality Ontology",
+      "file": "http://data.bioontology.org/ontologies/PATO",
+      "version": "unknown"
+    },
+    "CHEBI": {
+        "@type":"CategoryCodeSet",
+      "name": "CHEBI",
+      "description": "Chemical Entities of Biological Interest Ontology",
+      "file": "http://data.bioontology.org/ontologies/CHEBI",
+      "version": "172"
+    },
+    "NCBITAXON": {
+        "@type":"CategoryCodeSet",
+      "name": "NCBITAXON",
+      "description": "National Center for Biotechnology Information (NCBI) Organismal Classification",
+      "file": "http://data.bioontology.org/ontologies/NCBITAXON",
+      "version": "2018AA"
+    },
+    "ENVO": {
+        "@type":"DefinedTermSet",
+      "name": "ENVO",
+      "description": "Environment Ontology",
+      "file": "http://data.bioontology.org/ontologies/ENVO",
+      "version": "unknown"
+    },
+    "GAZ": {
+        "@type":"DefinedTermSet",
+      "name": "GAZ",
+      "description": "Gazetteer",
+      "file": "http://data.bioontology.org/ontologies/GAZ",
+      "version": "$Revision: 1.512 $"
+    }
+  },
+  "comments": [
+    {
+      "@type":"SoftwareApplication",
+      "name": "Created With Configuration",
+      "value": "1.0"
+    },
+    {
+    "@type":"Legislation",
+      "name": "Data Descriptor License",
+      "value": "CC-BY-4.0"
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+{
+    "@context": "http://schema.org",
+    "@type": "Dataset",
+    "identifier": "http://doi.org/10.1038/sdata.2017.27",
+    "includedInDataCatalog": {
+        "@context": "http://schema.org",
+        "@type": "DataCatalog",
+        "name": "ISA-explorer",
+        "alternateName": "Scientific Data ISA-explorer",
+        "description": "The ISA-explorer is a data discovery tool. It provides a light-weight index for datasets described with the ISA-Tab format. This site is an instance of the ISA-explorer for datasets published in Nature Scientific Data.",
+        "url": "http://scientificdata.isa-explorer.org/",
+        "keywords": "Scientific Data, ISA-Tab, data descriptors",
+        "provider": [
+            {
+                "@type": "Organization",
+                "name": "Springer Nature Scientific Data",
+                "url": "https://www.nature.com/sdata/",
+                "comment": "This organization provides the ISA-Tab files associated with data descriptor articles"
+            },
+            {
+                "@type": "Organization",
+                "name": "ISA team",
+                "url": "https://isa-tools.org",
+                "comment": "This organization provides the ISA-explorer tool."
+            }
+        ],
+        "creator": [
+            {
+                "@type": "Person",
+                "name": "Eamonn Maguire",
+                "url": "https://orcid.org/0000-0002-7277-7834"
+            },
+            {
+                "@type": "Person",
+                "name": "Alejandra Gonzalez-Beltran",
+                "url": "http://orcid.org/0000-0003-3499-8262"
+            },
+            {
+                "@type": "Person",
+                "name": "Massimiliano Izzo",
+                "url": "https://orcid.org/0000-0002-8100-6142"
+            }
+        ],
+        "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "comment": "The license applies to the ISA-Tab files available through this data catalogue/application",
+        "image": "http://scientificdata.isa-explorer.org/assets/img/logo-isa-explorer.png"
+    },
+    "name": "Metazoan mitochondrial gene sequence reference datasets for taxonomic assignment of environmental samples",
+    "description": "Mitochondrial-encoded genes are increasingly targeted in studies using high-throughput sequencing approaches for characterizing metazoan communities from environmental samples (e.g., plankton, meiofauna, filtered water). Yet, unlike nuclear ribosomal RNA markers, there is to date no high-quality reference dataset available for taxonomic assignments. Here, we retrieved all metazoan mitochondrial gene sequences from GenBank, and then quality filtered and formatted the datasets for taxonomic assignments using taxonomic assignment tools. The reference datasets-'Midori references'-are available for download at www.reference-midori.info. Two versions are provided: (I) Midori-UNIQUE that contains all unique haplotypes associated with each species and (II) Midori-LONGEST that contains a single sequence, the longest, for each species. Overall, the mitochondrial Cytochrome oxidase subunit I gene was the most sequence-rich gene. However, sequences of the mitochondrial large ribosomal subunit RNA and Cytochrome b apoenzyme genes were observed for a large number of species in some phyla. The Midori reference is compatible with some taxonomic assignment software. Therefore, automated high-throughput sequence taxonomic assignments can be particularly effective using these datasets.",
+    "url": "http://scientificdata.isa-explorer.org/sdata201727",
+    "hasPart": [
+        {
+            "@type": "Dataset",
+            "url": "http://www.nature.com/article-assets/npg/sdata/2017/sdata201727/isa-tab/sdata201727-isa1.zip",
+            "license": "CC0",
+            "description": "ISA-Tab Experimental Metadata for dataset described in Scientific Data Data Descriptor article 10.1038/sdata.2017.27"
+        },
+        {
+            "@type": "Dataset",
+            "url": "doi:10.5061/dryad.2v00t",
+            "includedInDataCatalog": {
+                "@type": "DataCatalog",
+                "name": "Dryad Digital Repository"
+            }
+        }
+    ],
+    "creator": [
+        {
+            "@type": "Person",
+            "name": "Ryuji J.Machida",
+            "affiliation": "Biodiversity Research Centre, Academia Sinica, Taipei 11529, Taiwan",
+            "identifier": ""
+        },
+        {
+            "@type": "Person",
+            "name": "MatthieuLeray",
+            "affiliation": "Smithsonian Tropical Research Institute, Panama City, Republic of Panama",
+            "identifier": ""
+        },
+        {
+            "@type": "Person",
+            "name": "Shian-LeiHo",
+            "affiliation": "Biodiversity Research Centre, Academia Sinica, Taipei 11529, Taiwan",
+            "identifier": ""
+        },
+        {
+            "@type": "Person",
+            "name": "NancyKnowlton",
+            "affiliation": "National Museum of Natural History, Smithsonian Institution, Washington DC 20560-0163, USA",
+            "identifier": ""
+        }
+    ],
+    "measurementTechnique": "digital curation",
+    "variableMeasured": "Taxonomy",
+    "dateCreated": "16/09/2016",
+    "datePublished": "14/03/2017",
+    "citation": {
+        "@type": "ScholarlyArticle",
+        "identifier": "10.1038/sdata.2017.27",
+        "license": "CC BY-4.0",
+        "headline": "Metazoan mitochondrial gene sequence reference datasets for taxonomic assignment of environmental samples",
+        "datePublished": "14/03/2017"
+    }
+}
