@@ -4,7 +4,7 @@
   "title": "free text in some fields",
   "relatedPublications": [
   {
-    "@type":"CreativeWork",
+    "@type":"Manuscript",
     "doi":"https://doi.org/10.1038/s41597-019-0059-9"}
   ],
   "repositories": [
